@@ -22,5 +22,5 @@ if grep -q '# x7 send' "$FILE_FROM"; then
   if [[ $dev == *"x7 send"* ]]; then
     dev=x7 #no custom device name was set - set x7 as default
   fi
-  (cd ../sendmidi/mac/ ; sh sendpatch "$FILE_FROM" "$dev")
+  (cd ../sendmidi/linux/ ; sh sendpatch "$FILE_FROM" "$dev")
 fi
